@@ -207,7 +207,7 @@ export default {
   }
 
   .collapseMenu .dropdown-menu {
-    position: static;
+    position: static !important;
     float: none;
   }
 

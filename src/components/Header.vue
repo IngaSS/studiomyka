@@ -60,14 +60,12 @@ export default {
   },
   props: ["cartItems", "removeProduct"],
   data: () => ({
-    myRegistr: 'registr-modal',
-    myRequest: 'myRequest',
-    mySignIn: 'my-modal',
-    logo: logo,
+    myRegistr: "registr-modal",
+    myRequest: "myRequest",
+    mySignIn: "my-modal",
+    logo: logo
   }),
-  methods: {
-
-  },
+  methods: {},
   computed: {
     Cart() {
       return this.$store.getters.cart;
@@ -82,8 +80,6 @@ export default {
   color: #ffffff;
   text-decoration: underline;
 }
-
-
 </style>
 
 <style>
@@ -273,6 +269,7 @@ export default {
 
 .collapseNav {
   width: 100%;
+  justify-content: space-evenly;
 }
 
 .nav-collapseRow {
@@ -286,7 +283,7 @@ export default {
 }
 
 .header {
-  min-height: 100px;
+  min-height: 5vw;
   max-width: 100%;
   background-color: black;
   margin: 0;
@@ -299,21 +296,26 @@ export default {
 }
 
 .logo {
-  max-width: 95px;
+  width: 6vw;
 }
 
-.request, .mobrequest {
-  max-height: 40px;
+.request,
+.mobrequest {
+  height: 2vw !important;
+  width: 14vw;
   text-transform: uppercase;
   background-color: transparent !important;
-  border: 1px solid white;
+  border: 0.06vw solid white;
   border-radius: 5px;
 }
 
-.request .v-btn__content, .mobrequest .v-btn__content {
+.request .v-btn__content,
+.mobrequest .v-btn__content {
   padding: 0 15px;
   color: white;
   font-family: "Fira Sans", sans-serif;
+  font-size: 0.9vw;
+  font-weight: 300;
 }
 
 .links,
@@ -323,7 +325,7 @@ export default {
 
 .links {
   padding: 0;
-  margin-left: 6%;
+  margin-left: 5.5vw;
 }
 
 .icons {
@@ -331,46 +333,48 @@ export default {
 }
 
 .link {
-  width: 55px;
-  height: 55px;
+  width: 3vw;
+  height: 3vw;
   text-align: center;
 }
 
 .inst {
   line-height: 1.4 !important;
-  font-size: 40px;
+  font-size: 2.2vw;
   color: #8a58ab;
 }
 
 .face {
   line-height: 1.9 !important;
-  font-size: 30px;
+  font-size: 1.6vw;
   color: #8a58ab;
 }
 
 .contacts {
   display: flex;
   justify-content: space-around;
+  max-width: 14vw;
 }
 
 .phone {
   color: white;
-  font-size: 18px;
+  font-size: 1vw;
+  font-weight: 200;
 }
 
 .mail {
   color: white;
-  font-size: 18px;
+  font-size: 1vw;
 }
 
 .logIn,
 .cart {
-  font-size: 35px;
+  font-size: 2vw;
   color: gray;
 }
 
 .icon {
-  width: 70px;
+  width: 3vw;
   text-align: right;
 }
 

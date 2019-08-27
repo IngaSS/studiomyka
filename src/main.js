@@ -9,7 +9,7 @@ Vue.config.productionTip = false
 
 import './plugins/vuetify'
 // import 'bootstrap-css-only/css/bootstrap.min.css';
-// import 'mdbvue/build/css/mdb.css';
+import 'mdbvue/build/css/mdb.css';
 import VueRouter from 'vue-router'
 import YmapPlugin from 'vue-yandex-maps'
 import Home from "./views/Home";

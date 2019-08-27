@@ -10,7 +10,7 @@
       </p>
     </v-layout>
     <v-layout class="events">
-      <!-- <Event
+      <Event
         :pic="CorporatePic"
         :event="corporateParty.event"
         :text="corporateParty.p"
@@ -49,7 +49,7 @@
         :bonus1="henParty.bonus1"
         :bonus2="henParty.bonus2"
         :bonus3="henParty.bonus3"
-      /> -->
+      />
     </v-layout>
 
     <Partners />
@@ -63,8 +63,8 @@ import Header from "../components/Header";
 import Toolbar from "../components/Toolbar";
 import Partners from "../components/Partners";
 import Footer from "../components/Footer";
-// import EventReverse from "../components/EventReverse";
-// import Event from "../components/Event";
+import EventReverse from "../components/EventReverse";
+import Event from "../components/Event";
 import MobContacts from "../components/MobContacts";
 
 import gradePic from "../img/grade.png";
@@ -78,8 +78,8 @@ export default {
     Header,
     Toolbar,
     Partners,
-    // Event,
-    // EventReverse,
+    Event,
+    EventReverse,
     MobContacts,
     Footer
   },

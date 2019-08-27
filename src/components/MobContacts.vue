@@ -1,6 +1,6 @@
 <template>
   <div class="mobHeader row">
-    <v-btn class="mobrequest" @click="$bvModal.show('myRequest')">Оставить заявку</v-btn>
+    <v-btn class="request" @click="$bvModal.show('myRequest')">Оставить заявку</v-btn>
     <div class="mobcontacts" cols="4" align-self="center">
       <a href="tel:+74951233799" class="phone">+7 495 123-37-99</a>
       <a href="mailto:office@studiomyka.ru" class="mail">office@studiomyka.ru</a>

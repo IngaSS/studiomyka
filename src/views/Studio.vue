@@ -4,10 +4,10 @@
     <Toolbar />
     <Slider />
     <descriptionMobile />
-    <!-- <Team />
+    <Team />
     <News />
     <newsMobile />
-    <PhotoGallary /> -->
+    <PhotoGallary />
     <v-layout class="reviews">
       <b-carousel
         id="carousel-no-animation"
@@ -15,7 +15,7 @@
         indicators
         controls
         no-animation
-        :interval="false"
+        :interval="8000"
         fade
       >
         <b-carousel-slide>
@@ -46,9 +46,9 @@ import Header from "../components/Header";
 import Toolbar from "../components/Toolbar";
 import Footer from "../components/Footer";
 import Slider from "../components/Slider";
-// import Team from "../components/Team";
-// import News from "../components/News";
-// import PhotoGallary from "../components/PhotoGallary";
+import Team from "../components/Team";
+import News from "../components/News";
+import PhotoGallary from "../components/PhotoGallery";
 import descriptionMobile from "../components/descriptionMobile";
 import newsMobile from "../components/newsMobile";
 import MobContacts from "../components/MobContacts";
@@ -62,12 +62,12 @@ export default {
     Toolbar,
     Footer,
     Slider,
-    // Team,
-    // News,
+    Team,
+    News,
     newsMobile,
     descriptionMobile,
     MobContacts,
-    // PhotoGallary
+    PhotoGallary
   },
   data: () => ({
     review: review

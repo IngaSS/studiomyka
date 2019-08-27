@@ -14,7 +14,7 @@
       </div>
     </v-layout>
     <v-layout class="events">
-      <!-- <Event
+      <Event
         :pic="birthPic"
         :event="textChild.event"
         :text="textChild.p"
@@ -29,7 +29,7 @@
         :bonus1="textGrade.bonus1"
         :bonus2="textGrade.bonus2"
         :bonus3="textGrade.bonus3"
-      /> -->
+      />
     </v-layout>
     <Partners />
     <MobContacts />
@@ -43,8 +43,8 @@ import Header from "../components/Header";
 import Toolbar from "../components/Toolbar";
 import Footer from "../components/Footer";
 import Partners from "../components/Partners";
-// import Event from "../components/Event";
-// import EventReverse from "../components/EventReverse";
+import Event from "../components/Event";
+import EventReverse from "../components/EventReverse";
 import MobContacts from "../components/MobContacts";
 
 import birthPic from "../img/birth.png";
@@ -56,8 +56,8 @@ export default {
     Header,
     Toolbar,
     Partners,
-    // Event,
-    // EventReverse,
+    Event,
+    EventReverse,
     MobContacts,
     Footer
   },
@@ -116,6 +116,8 @@ export default {
 }
 
 .events {
+  max-width: 80%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
@@ -266,40 +268,53 @@ export default {
 }
 
 .profits {
-  margin-top: 3%;
+  /* margin-top: 3%; */
 }
 
 .profits ul {
   flex-direction: row;
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  /* width: 100%; */
+  width: 83%;
+  margin: 0 auto;
   padding: 0;
 }
 
-.profits ul li {
+/* .profits ul li {
   color: white;
   list-style-type: none;
   display: flex;
-}
+} */
 
 .profits .material-icons {
-  height: 50px;
-  width: 50px;
+  height: 3.2vw;
+  width: 3.2vw;
   background-color: rgba(137, 90, 172, 0.2);
-  font-size: 56px;
-  margin-top: -5%;
-  margin-right: 10px;
+  font-size: 3.5vw;
+  margin-top: -1vw;
+  margin-right: 0.7vw;
 }
 
-.profits p {
+.profits ul li {
+  color: #ffffff;
+  list-style-type: none;
+  display: flex;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 1vw;
+  font-weight: 100;
+  text-align: center;
+  word-break: break-word;
+}
+
+/* .profits p {
   line-height: 1.5;
   font-family: "Fira Sans", sans-serif;
   font-size: 16px;
   font-weight: 100;
   text-align: center;
   color: #ffffff;
-}
+} */
 
 @media (min-width: 731px) and (max-width: 1024px) {
   .events {
@@ -542,7 +557,7 @@ export default {
 
   .birthContent p,
   .gradeContent p {
-        max-width: 65%;
+    max-width: 65%;
     font-size: 130%;
   }
 

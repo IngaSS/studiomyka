@@ -138,7 +138,7 @@ export default {
 
 .masterBtn {
   width: 302px;
-  height: 100px;
+  height: 100px !important;
   background-color: #895aac !important;
   margin: 0;
   padding: 0;

@@ -11,12 +11,12 @@
         <div class="listMobile">
           <span class="mobileSpan">Кулинарные мероприятия</span>
           <ul>
-            <li>Корпоративы и тимбилдинги;</li>
-            <li>Презентации;</li>
-            <li>Школьные выпускные;</li>
-            <li>Девичники;</li>
-            <li>Дни рождения;</li>
-            <li>Детские праздники.</li>
+            <li>Корпоративы и тимбилдинги</li>
+            <li>Презентации</li>
+            <li>Школьные выпускные</li>
+            <li>Девичники</li>
+            <li>Дни рождения</li>
+            <li>Детские праздники</li>
           </ul>
         </div>
       </div>
@@ -133,7 +133,7 @@ export default {
 
 .mobileBtn, .businessBtn {
   width: 20%;
-  height: 70px;
+  height: 70px !important;
   border-radius: 50px;
   background-color: #ffffff;
   margin: 0 auto;

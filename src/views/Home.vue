@@ -22,7 +22,7 @@
     <Sertificate />
     <!-- <Contacts /> -->
     <Partners />
-    <!-- <Contacts /> -->
+    <Contacts />
     <MobContacts />
     <Footer />
   </v-container>
@@ -69,11 +69,12 @@ a {
   font-family: "Fira Sans", sans-serif;
 }
 
-.h1, .businessText h1 {
+.h1,
+.businessText h1 {
   max-width: 80%;
   margin: 0 auto;
   color: #ffffff;
-  font-size: 46px;
+  font-size: 1.5vw;
   font-weight: 600;
   font-style: normal;
   text-align: center;
@@ -85,8 +86,9 @@ a {
   font-family: "Fira Sans", sans-serif;
 }
 
-.bigPic, .businessPic {
-  min-height: 535px;
+.bigPic,
+.businessPic {
+  min-height: 32vw;
   background-image: url(../img/bigPic.png);
   background-size: 100%;
 }
@@ -102,14 +104,14 @@ a {
 
 .text p {
   font-family: "Fira Sans", sans-serif;
-  font-size: 18px;
+  font-size: 1vw;
   color: white;
-  max-width: 924px;
+  max-width: 63vw;
 }
 
 .text h1 {
   font-family: "Fira Sans", sans-serif;
-  font-size: 46px;
+  font-size: 2vw;
   font-weight: 600;
   font-style: normal;
   font-stretch: extra-condensed;
@@ -124,14 +126,15 @@ a {
     font-size: 160%;
   }
 
-  .h1, .businessText h1 {
-    font-size: 166%;
+  .h1,
+  .businessText h1 {
+    font-size: 1.5vw;
     font-weight: 300;
   }
 
-  .bigPic, .businessPic {
+  /* .bigPic, .businessPic {
     min-height: 135px;
-  }
+  } */
 }
 
 @media (min-width: 415px) and (max-width: 668px) {
@@ -139,14 +142,15 @@ a {
     font-size: 160%;
   }
 
-  .h1, .businessText h1 {
+  .h1,
+  .businessText h1 {
     font-size: 166%;
     font-weight: 300;
   }
 
-  .bigPic, .businessPic {
+  /* .bigPic, .businessPic {
     min-height: 190px;
-  }
+  } */
 }
 
 @media (min-width: 668px) and (max-width: 824px) {
@@ -154,14 +158,15 @@ a {
     font-size: 160%;
   }
 
-  .h1, .businessText h1 {
+  .h1,
+  .businessText h1 {
     font-size: 166%;
     font-weight: 300;
   }
 
-  .bigPic, .businessPic {
+  /* .bigPic, .businessPic {
     min-height: 270px;
-  }
+  } */
 }
 
 @media (min-width: 824px) and (max-width: 1024px) {
@@ -169,14 +174,15 @@ a {
     font-size: 160%;
   }
 
-  .h1, .businessText h1 {
+  .h1,
+  .businessText h1 {
     font-size: 166%;
     font-weight: 300;
   }
 
-  .bigPic, .businessPic {
+  /* .bigPic, .businessPic {
     min-height: 310px;
-  }
+  } */
 }
 
 @media (min-width: 1025px) and (max-width: 1366px) {
@@ -184,14 +190,15 @@ a {
     font-size: 280%;
   }
 
-  .h1, .businessText h1 {
+  .h1,
+  .businessText h1 {
     font-size: 300%;
     font-weight: 300;
   }
 
-  .bigPic, .businessPic {
+  /* .bigPic, .businessPic {
     min-height: 390px;
-  }
+  } */
 }
 
 @media (min-width: 1420px) and (max-width: 1550px) {
@@ -199,38 +206,39 @@ a {
     font-size: 280%;
   }
 
-  .h1, .businessText h1 {
+  .h1,
+  .businessText h1 {
     font-size: 300%;
     font-weight: 300;
   }
-
+  /* 
   .bigPic, .businessPic {
     min-height: 494px;
-  }
+  } */
 }
 
 @media (min-width: 1300px) and (max-width: 1419px) {
-  .bigPic, .businessPic {
+  /* .bigPic, .businessPic {
     min-height: 442px;
-  }
+  } */
 }
 
 @media (min-width: 1170px) and (max-width: 1299px) {
-  .bigPic, .businessPic {
+  /* .bigPic, .businessPic {
     min-height: 414px;
-  }
+  } */
 }
 
 @media (min-width: 1050px) and (max-width: 1169px) {
-  .bigPic, .businessPic {
+  /* .bigPic, .businessPic {
     min-height: 370px;
-  }
+  } */
 }
 
 @media (min-width: 900px) and (max-width: 1049px) {
-  .bigPic, .businessPic {
+  /* .bigPic, .businessPic {
     min-height: 340px;
-  }
+  } */
 }
 
 @media (min-width: 320px) and (max-width: 990px) {
