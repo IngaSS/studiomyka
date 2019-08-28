@@ -5,9 +5,9 @@
         <h3>Карта</h3>
         <yandex-map
           :coords="[55.758443, 37.549238]"
-          zoom="17"
+          zoom="18"
           :behaviors="['multiTouch', 'dblClickZoom', 'scrollZoom', 'drag']"
-          :controls="['fullscreenControl', 'geolocationControl', 'typeSelector', 'zoomControl']"
+          :controls="['geolocationControl', 'typeSelector', 'zoomControl']"
           map-type="map"
         >
           <ymap-marker
@@ -55,23 +55,119 @@ export default {
 </script>
 
 <style>
+.map .ymaps-2-1-74-copyright {
+  height: 0.9vw;
+  top: -47px;
+}
+
+.map .ymaps-2-1-74-copyright__content {
+  font: 0.7vw Verdana, Arial, sans-serif;
+}
+
+.map .ymaps-2-1-74-map-copyrights-promo {
+  display: none;
+}
+
+.map .ymaps-2-1-74-float-button-icon {
+  width: 1.7vw;
+  height: 1.7vw;
+}
+
+.map .ymaps-2-1-74-float-button {
+  width: 2vw;
+  max-width: 2vw !important;
+  height: 2vw;
+}
+
+.map .ymaps-2-1-74-float-button-icon_icon_geolocation {
+  background-size: contain;
+}
+
+.map .ymaps-2-1-74-zoom {
+  height: 7vw !important;
+  width: 2vw;
+}
+
+.map .ymaps-2-1-74-controls__control {
+  top: 8vw !important;
+}
+
+.map .ymaps-2-1-74-zoom__runner {
+  top: 0.1vw !important;
+  left: -0.94vw;
+}
+
+.map .ymaps-2-1-74-zoom__scale {
+  width: 0.1vw;
+  left: 55px;
+  top: 120px;
+  bottom: 120px;
+}
+
+.map .ymaps-2-1-74-zoom__minus .ymaps-2-1-74-zoom__icon,
+.map .ymaps-2-1-74-zoom__plus .ymaps-2-1-74-zoom__icon,
+.map .ymaps-2-1-74-listbox__button-icon.ymaps-2-1-74-_icon_layers,
+.map .ymaps-2-1-74-_visible-arrow .ymaps-2-1-74-listbox__button-arrow {
+  background-size: contain;
+}
+
+.map .ymaps-2-1-74-listbox {
+  width: 7vw !important;
+  height: 2.3vw;
+}
+
+.map .ymaps-2-1-74-listbox__button {
+  height: 2.3vw;
+  width: 7vw;
+}
+
+.map .ymaps-2-1-74-listbox__button-icon {
+  width: 2vw;
+  height: 2vw;
+}
+
+.map .ymaps-2-1-74-listbox__button-text {
+  font-size: 1vw;
+  padding: 0 12px 0 0.3vw;
+  line-height: 2.2vw;
+}
+
+.map .ymaps-2-1-74-listbox__button-arrow {
+  width: 0.7vw;
+  height: 0.7vw;
+  right: 0.6vw;
+  top: 0.8vw;
+}
+
+/* iframe {
+  width: 5vw !important;
+  max-width: 5vw !important;
+  min-width: 8vw !important;
+  height: 1.5vw !important;
+  max-height: 1.5vw !important;
+  min-height: 2vw !important;
+} */
+
 .mainDiv {
-  min-height: 545px;
+  min-height: 30vw;
   max-width: 95%;
   margin: 0 auto;
   overflow: hidden;
-  margin-top: 6%;
+  margin-top: 1vw;
   background-color: rgba(157, 52, 205, 0.2);
 }
 
 .mapCont {
   display: flex;
   justify-content: space-around;
+  min-height: 21vw;
+  max-width: 100%;
+  margin: 3vw auto;
 }
 
 .ymap-container {
-  width: 590px;
-  height: 460px;
+  width: 27vw;
+  height: 22vw;
   margin: 0 auto;
 }
 
@@ -87,11 +183,9 @@ export default {
   border-radius: 20px;
 }
 
-.mapCont {
-  min-height: 514px;
-  max-width: 100%;
-  margin-top: 5%;
-  margin-bottom: 5%;
+.ymaps-2-1-74-map {
+  width: 27vw !important;
+  height: 22vw !important;
 }
 
 .map {
@@ -146,7 +240,7 @@ export default {
 
 .mapCont h3 {
   font-family: "Fira Sans", sans-serif;
-  font-size: 42px;
+  font-size: 2vw;
   font-weight: 300;
   font-style: normal;
   font-stretch: extra-condensed;
@@ -209,7 +303,7 @@ export default {
   }
 }
 
-@media screen and (min-width: 1380px) {
+/* @media screen and (min-width: 1380px) {
   .contactsText {
     width: 690px;
     min-height: 493px;
@@ -228,7 +322,7 @@ export default {
     width: 690px;
     height: 493px;
   }
-}
+} */
 
 @media screen and (max-width: 320px) {
   .mainDiv {

@@ -57,10 +57,9 @@ export default {
 </script>
 
 <style>
-
 .mobMenu {
   background-color: #895aac;
-  min-height: 50px;
+  min-height: 3vw;
   justify-content: flex-end;
 }
 
@@ -92,8 +91,15 @@ export default {
   padding: 0.25rem 2rem;
 }
 
+.collapseMenu .dropdown-menu a {
+  font-size: 1vw;
+  padding: 0.4vw;
+  font-family: "Fira Sans", sans-serif;
+}
+
 .collapseMenu .dropdown-menu {
   width: -webkit-fill-available;
+  min-width: 8vw;
 }
 
 .collapseMenu .dropdown-toggle::after {
@@ -108,7 +114,7 @@ export default {
 .nav-item a,
 .nav-link {
   font-family: "Fira Sans", sans-serif;
-  font-size: 16px;
+  font-size: 1vw;
   font-weight: 300;
   font-style: normal;
   font-stretch: extra-condensed;
@@ -129,7 +135,6 @@ export default {
   display: block;
   margin-top: 0;
 }
-
 
 @media (min-width: 320px) and (max-width: 990px) {
   .moblogo {
@@ -162,7 +167,7 @@ export default {
 }
 
 @media (min-width: 992px) and (max-width: 1285px) {
-  .navbar-nav .nav-link {
+  /* .navbar-nav .nav-link {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
@@ -173,18 +178,17 @@ export default {
 
   .collapseMenu .dropdown-menu {
     width: auto;
-  }
+  } */
 }
 
 @media (max-width: 1285px) {
-  .collapseMenu li {
+  /* .collapseMenu li {
     padding: 0;
-  }
+  } */
 
   .nav-collapseRow {
     justify-content: flex-end;
   }
-
 }
 
 @media (min-width: 992px) {

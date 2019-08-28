@@ -18,27 +18,28 @@ export default {
 
 <style>
 .sertificate {
-  margin-top: 3%;
+  margin-top: 3vw;
 }
 
 .sertDiv {
   margin: 0 auto;
   display: flex;
   min-width: 100%;
-  min-height: 200px;
+  min-height: 17vw;
   background-image: url(../img/sertBack.png);
   background-repeat: repeat-x;
   justify-content: space-around;
+  background-size: contain;
 }
 
 .textSert {
   margin: auto 0;
-  max-width: 685px;
+  max-width: 35vw;
 }
 
 .textSert h2 {
   font-family: "Fira Sans", sans-serif;
-  font-size: 44px;
+  font-size: 2.7vw;
   font-weight: 500;
   font-style: normal;
   font-stretch: extra-condensed;
@@ -49,23 +50,23 @@ export default {
 
 .textSert p {
   font-family: "Fira Sans", sans-serif;
-  font-size: 18px;
+  font-size: 1.2vw;
   font-weight: 100;
   color: #ffffff;
 }
 
 .buySert {
   margin: auto 0;
-  width: 250px;
-  min-height: 96px;
-  border-radius: 18px;
-  border: solid 4px #895aac;
+  width: 16vw;
+  min-height: 6.5vw;
+  border-radius: 0.9vw;
+  border: solid 0.5vw #895aac;
   background-color: #895aac !important;
 }
 
 .buySert .v-btn__content {
   font-family: "Fira Sans", sans-serif;
-  font-size: 30px;
+  font-size: 2.1vw;
   font-weight: 300;
   color: #ffffff;
 }
@@ -91,7 +92,7 @@ export default {
     font-size: 40px;
   }
 
-   .buySert {
+  .buySert {
     margin-bottom: 2%;
   }
 }

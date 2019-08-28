@@ -3,7 +3,7 @@
     <v-layout wrap class="mastClList">
       <v-flex v-for="item of masterClasses" :item="item" class="mastCard" :key="item.id">
         <v-card flat tile>
-          <v-img :src="img" height="270px"></v-img>
+          <v-img :src="img" height="12vw"></v-img>
           <h3>{{ item.name }}</h3>
           <h5>{{ item.dateofevent}}</h5>
         </v-card>
@@ -14,7 +14,11 @@
           <ul>
             <li v-for="elem of item.dishes" :key="elem.id">{{ elem.name }}</li>
           </ul>
-          <v-btn class="masterBtn" to="/MasterClassDetails" @click.capture="showModal(item)">Записаться</v-btn>
+          <v-btn
+            class="masterBtn"
+            to="/MasterClassDetails"
+            @click.capture="showModal(item)"
+          >Записаться</v-btn>
         </div>
       </v-flex>
     </v-layout>
@@ -40,7 +44,6 @@ export default {
 </script>
 
 <style>
-
 .masterCl {
   justify-content: center;
   flex-direction: column;
@@ -57,16 +60,16 @@ export default {
 }
 
 .mastCard {
-  max-width: 305px;
-  min-width: 305px;
-  min-height: 372px;
+  max-width: 14vw;
+  min-width: 14vw;
+  min-height: 16vw;
   position: relative;
-  margin-top: 5%;
+  margin-top: 4vw;
 }
 
 .mastCard .v-sheet {
-  min-height: 372px;
-  text-align: center;
+  min-height: 16.5vw;
+    text-align: center;
 }
 
 .hoverD {
@@ -130,9 +133,14 @@ export default {
 }
 
 .mastCard .v-sheet h3 {
-  margin-top: 6%;
-  font-size: 20px;
+  margin-top: 1vw;
+  font-size: 1.2vw;
   font-weight: 600;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.mastCard .v-sheet h5 {
+  font-size: 1vw;
   font-family: "Fira Sans", sans-serif;
 }
 
@@ -162,19 +170,18 @@ export default {
 }
 
 .allMastClasses {
-  max-width: 550px;
-  min-width: 550px;
-  min-height: 76px;
+  width: 19vw;
+  min-height: 3.5vw;
   margin: 0 auto;
-  margin-top: 3%;
-  border: solid 3px #895aac;
+  margin-top: 3vw;
+  border: solid .09vw #895aac;
   border-radius: 0px;
   background-color: transparent !important;
 }
 
 .allMastClasses .v-btn__content {
   font-family: "Fira Sans", sans-serif;
-  font-size: 30px;
+  font-size: 1vw;
   font-weight: 300;
   font-stretch: extra-condensed;
   color: #ffffff;

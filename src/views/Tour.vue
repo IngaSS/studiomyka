@@ -24,7 +24,6 @@ import Partners from "../components/Partners";
 import Footer from "../components/Footer";
 import MobContacts from "../components/MobContacts";
 
-
 export default {
   name: "Tour",
   components: {
@@ -37,23 +36,23 @@ export default {
   computed: {
     Cart() {
       return this.$store.getters.cart;
-    },
+    }
   }
 };
 </script>
 
 <style>
 .tour {
-  margin-bottom: 3%;
+  margin-bottom: 1vw;
 }
 
 .tourFrame {
   width: 100%;
-  min-height: 700px;
+  min-height: 38vw;
   margin: 0 auto;
 }
 
-@media (min-width: 320px) and (max-width: 430px) {
+/* @media (min-width: 320px) and (max-width: 430px) {
   .tourFrame {
     width: 100%;
     min-height: 200px;
@@ -75,7 +74,7 @@ export default {
     min-height: 550px;
     margin: 0 auto;
   }
-}
+} */
 </style>
 
 

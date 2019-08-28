@@ -16,7 +16,7 @@
           <a href="mailto:office@studiomyka.ru" class="mail">office@studiomyka.ru</a>
         </b-col>
         <b-col class="links" cols="1" align-self="center">
-          <a href="instagram.com://studio_myka/" target="_blank" class="link">
+          <a href="https://www.instagram.com/studio_myka/" target="_blank" class="link">
             <i class="fab fa-instagram inst"></i>
           </a>
           <a href="http://www.facebook.com/studiomyka/" target="_blank" class="link">

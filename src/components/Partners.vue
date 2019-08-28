@@ -1,10 +1,10 @@
 <template>
   <b-container class="partners">
     <b-row class="partIcons">
-      <b-img :src="icon1" width="190" height="100" alt="Image 1" class="withMargin"></b-img>
-      <b-img :src="icon2" width="250" height="150" alt="Image 1"></b-img>
-      <b-img :src="icon3" alt="Image 1" width="230" height="100" class="withMargin"></b-img>
-      <b-img :src="icon4" alt="Image 1" height="180" class="icon4"></b-img>
+      <b-img :src="icon1" alt="Image 1" class="withMargin"></b-img>
+      <b-img :src="icon2" alt="Image 1"></b-img>
+      <b-img :src="icon3" alt="Image 1" class="withMargin"></b-img>
+      <b-img :src="icon4" alt="Image 1" class="icon4"></b-img>
     </b-row>
   </b-container>
 </template>
@@ -26,23 +26,33 @@ export default {
 
 <style>
 .partners {
-  margin-top: 5%;
+  margin-top: 4vw;
   max-width: 100%;
   background-color: rgba(255, 255, 255, 0.56);
   overflow: hidden;
   display: flex;
   justify-content: center;
-  margin-bottom: 10%;
+  margin-bottom: 5vw;
 }
 
 .partIcons {
   margin-left: 0;
   margin-right: 0;
-  margin-top: 3%;
-  margin-bottom: 3%;
-  width: 85%;
+  max-width: 80%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
-  margin: 3% auto;
+  margin: 4vw auto;
+}
+
+.partIcons img {
+  width: 16vw;
+  height: 9vw;
+}
+
+.partIcons img:nth-child(4) {
+  width: 5.5vw;
+  height: 9vw;
 }
 
 .extra {
