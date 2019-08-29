@@ -74,7 +74,7 @@ a {
   max-width: 80%;
   margin: 0 auto;
   color: #ffffff;
-  font-size: 1.5vw;
+  font-size: 2vw;
   font-weight: 600;
   font-style: normal;
   text-align: center;
@@ -100,18 +100,20 @@ a {
 
 .text {
   text-align: center;
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 .text p {
   font-family: "Fira Sans", sans-serif;
-  font-size: 1vw;
+  font-size: 1.5vw;
   color: white;
-  max-width: 63vw;
+  /* max-width: 63vw; */
 }
 
 .text h1 {
   font-family: "Fira Sans", sans-serif;
-  font-size: 2vw;
+  font-size: 2.5vw;
   font-weight: 600;
   font-style: normal;
   font-stretch: extra-condensed;
@@ -121,23 +123,100 @@ a {
   color: #ffffff;
 }
 
-@media (min-width: 320px) and (max-width: 414px) {
+.allMastClasses {
+      width: 33vw;
+    min-height: 7.5vw;
+  margin: 0 auto;
+  margin-top: 3vw;
+  border: solid 0.09vw #895aac;
+  border-radius: 0px;
+  background-color: transparent !important;
+}
+
+.allMastClasses .v-btn__content {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 1.8vw;
+  font-weight: 300;
+  font-stretch: extra-condensed;
+  color: #ffffff;
+}
+
+@media (min-width: 320px) and (max-width: 499px) {
+  .text {
+    max-width: 95%;
+  }
+
+  .text p {
+    font-size: 5vw;
+  }
+
   .text h1 {
-    font-size: 160%;
+    font-size: 5.5vw;
   }
 
   .h1,
   .businessText h1 {
-    font-size: 1.5vw;
-    font-weight: 300;
+    font-size: 5vw;
   }
 
-  /* .bigPic, .businessPic {
-    min-height: 135px;
-  } */
+  .allMastClasses {
+    width: 90vw;
+    min-height: 16.5vw;
+  }
+
+  .allMastClasses .v-btn__content {
+    font-size: 5vw;
+  }
 }
 
-@media (min-width: 415px) and (max-width: 668px) {
+@media (min-width: 500px) and (max-width: 991px) {
+  .text {
+    max-width: 95%;
+  }
+
+  .text p {
+    font-size: 2.3vw;
+  }
+
+  .text h1 {
+    font-size: 4vw;
+  }
+
+  .h1,
+  .businessText h1 {
+    font-size: 5vw;
+  }
+
+  .allMastClasses {
+    width: 40vw;
+    min-height: 8.5vw;
+  }
+
+  .allMastClasses .v-btn__content {
+    font-size: 2.3vw;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1100px) {
+  .text {
+    max-width: 95%;
+  }
+
+  .text p {
+    font-size: 2vw;
+  }
+
+  .text h1 {
+    font-size: 3vw;
+  }
+
+  .h1,
+  .businessText h1 {
+    font-size: 3vw;
+  }
+}
+
+/* @media (min-width: 415px) and (max-width: 668px) {
   .text h1 {
     font-size: 160%;
   }
@@ -147,10 +226,6 @@ a {
     font-size: 166%;
     font-weight: 300;
   }
-
-  /* .bigPic, .businessPic {
-    min-height: 190px;
-  } */
 }
 
 @media (min-width: 668px) and (max-width: 824px) {
@@ -163,10 +238,6 @@ a {
     font-size: 166%;
     font-weight: 300;
   }
-
-  /* .bigPic, .businessPic {
-    min-height: 270px;
-  } */
 }
 
 @media (min-width: 824px) and (max-width: 1024px) {
@@ -179,10 +250,6 @@ a {
     font-size: 166%;
     font-weight: 300;
   }
-
-  /* .bigPic, .businessPic {
-    min-height: 310px;
-  } */
 }
 
 @media (min-width: 1025px) and (max-width: 1366px) {
@@ -195,10 +262,6 @@ a {
     font-size: 300%;
     font-weight: 300;
   }
-
-  /* .bigPic, .businessPic {
-    min-height: 390px;
-  } */
 }
 
 @media (min-width: 1420px) and (max-width: 1550px) {
@@ -211,39 +274,23 @@ a {
     font-size: 300%;
     font-weight: 300;
   }
-  /* 
-  .bigPic, .businessPic {
-    min-height: 494px;
-  } */
 }
 
 @media (min-width: 1300px) and (max-width: 1419px) {
-  /* .bigPic, .businessPic {
-    min-height: 442px;
-  } */
 }
 
 @media (min-width: 1170px) and (max-width: 1299px) {
-  /* .bigPic, .businessPic {
-    min-height: 414px;
-  } */
 }
 
 @media (min-width: 1050px) and (max-width: 1169px) {
-  /* .bigPic, .businessPic {
-    min-height: 370px;
-  } */
 }
 
 @media (min-width: 900px) and (max-width: 1049px) {
-  /* .bigPic, .businessPic {
-    min-height: 340px;
-  } */
 }
 
 @media (min-width: 320px) and (max-width: 990px) {
   .mobHeader {
     display: flex;
   }
-}
+} */
 </style>

@@ -14,14 +14,14 @@
           <i class="fab fa-facebook-f face"></i>
         </a>
       </div>
-      <div class="mobLinks" cols="1" align-self="center">
+      <!-- <div class="mobLinks" cols="1" align-self="center">
         <router-link to="#" class="MobIcon">
           <i class="far fa-user moblogIn" @click="$bvModal.show('my-modal')" id="show-btn"></i>
         </router-link>
         <router-link to="/CartView" class="MobIcon cartIcon">
           <i class="fas fa-shopping-cart mobcart"></i>
         </router-link>
-      </div>
+      </div>-->
     </div>
   </div>
 </template>
@@ -52,7 +52,7 @@ export default {};
 }
 
 .iconsCommonDiv {
-  width: 80%;
+  width: 34%;
   margin: 0 auto;
   display: flex;
   margin-top: 2%;
@@ -64,7 +64,7 @@ export default {};
 
 .mobLinks {
   float: left;
-  width: 50%;
+  width: 100%;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: space-around;
@@ -95,6 +95,58 @@ export default {};
 @media (min-width: 320px) and (max-width: 430px) {
   .mobHeader {
     margin-bottom: 13%;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 991px) {
+  .mobHeader {
+    display: flex;
+    margin-bottom: 0;
+  }
+
+  .request {
+    height: 7vw !important;
+    width: 37vw;
+    margin: 2vw auto;
+    border: 0.09vw solid white;
+  }
+
+  .request .v-btn__content {
+    font-size: 2.7vw;
+  }
+
+  .phone {
+    font-size: 4vw;
+  }
+
+  .mail {
+    font-size: 3vw;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 499px) {
+  .mobHeader {
+    display: flex;
+    margin-bottom: 0;
+  }
+
+  .request {
+    height: 10vw !important;
+    width: 60vw;
+    margin: 2vw auto;
+    border: 0.2vw solid white;
+  }
+
+  .request .v-btn__content {
+    font-size: 4.7vw;
+  }
+
+  .phone {
+    font-size: 7vw;
+  }
+
+  .mail {
+    font-size: 4vw;
   }
 }
 </style>

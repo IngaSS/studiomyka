@@ -10,22 +10,22 @@
         <i class="material-icons">dehaze</i>
       </b-navbar-toggle>
       <b-collapse id="menu-collapse" class="collapseMenu row" is-nav>
-        <b-nav-item-dropdown text="Студия" left class="col-auto withpad">
+        <!-- <b-nav-item-dropdown text="Студия" left class="col-auto withpad">
           <b-dropdown-item to="/Studio">Наша команда</b-dropdown-item>
           <b-dropdown-item to="/Studio">Новости</b-dropdown-item>
           <b-dropdown-item to="/Studio">Фотогаллерия</b-dropdown-item>
           <b-dropdown-item to="/Studio">Оставить отзыв</b-dropdown-item>
-        </b-nav-item-dropdown>
-        <b-nav-item-dropdown text="Детские мероприятия" class="col-auto">
+        </b-nav-item-dropdown>-->
+        <!-- <b-nav-item-dropdown text="Детские мероприятия" class="col-auto">
           <b-dropdown-item to="/ChildrenEvents">Дни рождения</b-dropdown-item>
           <b-dropdown-item to="/ChildrenEvents">Школьные</b-dropdown-item>
           <b-dropdown-item to="/ChildrenEvents">Выпускные</b-dropdown-item>
-        </b-nav-item-dropdown>
+        </b-nav-item-dropdown>-->
         <b-navbar-nav class="noDropDown col-auto">
           <b-nav-item to="/MasterClassesPage">Мастер-классы</b-nav-item>
           <!-- <b-nav-item href="#">Специальные мероприятия</b-nav-item> -->
         </b-navbar-nav>
-        <b-nav-item-dropdown text="Корпоративы и праздники" class="col-auto">
+        <!-- <b-nav-item-dropdown text="Корпоративы и праздники" class="col-auto">
           <b-dropdown-item to="/Festivals">Корпоративы</b-dropdown-item>
           <b-dropdown-item to="/Festivals">Тимбилдинги</b-dropdown-item>
           <b-dropdown-item to="/Festivals">Презентации</b-dropdown-item>
@@ -35,7 +35,7 @@
         <b-nav-item-dropdown text="Бизнес" class="styled col-auto">
           <b-dropdown-item to="/Business">Партнерские программы</b-dropdown-item>
           <b-dropdown-item to="/Business">Аренда студии</b-dropdown-item>
-        </b-nav-item-dropdown>
+        </b-nav-item-dropdown>-->
         <b-navbar-nav class="noDropDown col-auto">
           <b-nav-item to="/3Dtour">3D тур</b-nav-item>
           <!-- <b-nav-item to="/3Dtour">Контакты</b-nav-item> -->
@@ -59,7 +59,7 @@ export default {
 <style>
 .mobMenu {
   background-color: #895aac;
-  min-height: 3vw;
+  min-height: 4vw;
   justify-content: flex-end;
 }
 
@@ -114,7 +114,7 @@ export default {
 .nav-item a,
 .nav-link {
   font-family: "Fira Sans", sans-serif;
-  font-size: 1vw;
+  font-size: 1.2vw;
   font-weight: 300;
   font-style: normal;
   font-stretch: extra-condensed;
@@ -166,19 +166,32 @@ export default {
   }
 }
 
-@media (min-width: 992px) and (max-width: 1285px) {
-  /* .navbar-nav .nav-link {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+@media (min-width: 500px) and (max-width: 991px) {
+  .nav-item a,
+  .nav-link {
+    font-family: "Fira Sans", sans-serif;
+    font-size: 2.5vw;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: extra-condensed;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff !important;
   }
+}
 
-  .styled ul {
-    min-width: auto;
+@media (min-width: 320px) and (max-width: 499px) {
+  .nav-item a,
+  .nav-link {
+    font-family: "Fira Sans", sans-serif;
+    font-size: 4vw;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: extra-condensed;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff !important;
   }
-
-  .collapseMenu .dropdown-menu {
-    width: auto;
-  } */
 }
 
 @media (max-width: 1285px) {
@@ -223,6 +236,13 @@ export default {
   /* .links {
     margin-left: 0;
   } */
+}
+
+@media (min-width: 991px) and (max-width: 1500px) {
+  .nav-item a,
+  .nav-link {
+    font-size: 1.5vw;
+  }
 }
 </style>
 

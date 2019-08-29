@@ -23,7 +23,7 @@
             <i class="fab fa-facebook-f face"></i>
           </a>
         </b-col>
-        <b-col class="icons" cols="1" align-self="center">
+        <!-- <b-col class="icons" cols="1" align-self="center">
           <router-link to="#" class="icon">
             <i class="far fa-user logIn" @click="$bvModal.show('my-modal')" id="show-btn"></i>
           </router-link>
@@ -34,7 +34,7 @@
             <p v-if="!Cart.length">Ваша корзина пуста</p>
             <CartItem v-for="product of Cart" :key="product.h3" :cartItem="product" />
           </div>
-        </b-col>
+        </b-col>-->
       </b-navbar-nav>
     </b-collapse>
     <modalRequest :id="myRequest" />
@@ -83,12 +83,6 @@ export default {
 </style>
 
 <style>
-@media (min-width: 320px) and (max-width: 990px) {
-  .header {
-    display: none;
-  }
-}
-
 .mytextArea .v-input__slot {
   border: 1px solid #8a58ab !important;
 }
@@ -354,6 +348,8 @@ export default {
   display: flex;
   justify-content: space-around;
   max-width: 14vw;
+  text-align: center;
+  flex-direction: column;
 }
 
 .phone {
@@ -376,6 +372,61 @@ export default {
 .icon {
   width: 3vw;
   text-align: right;
+}
+
+@media (min-width: 991px) and (max-width: 1500px) {
+  .header {
+    min-height: 6vw;
+  }
+
+  .logo {
+    width: 8vw;
+  }
+
+  .request {
+    height: 3vw !important;
+    width: 20vw;
+  }
+
+  .request .v-btn__content {
+    font-size: 1.2vw;
+  }
+
+  .contacts {
+    max-width: 20vw;
+  }
+
+  .phone {
+    font-size: 1.5vw;
+  }
+
+  .mail {
+    font-size: 1.7vw;
+  }
+
+  .links {
+    max-width: 9vw;
+  }
+
+  .link {
+    width: 4vw;
+    height: 4vw;
+  }
+
+  .inst {
+    font-size: 3vw;
+  }
+
+  .face {
+    font-size: 2.3vw;
+    line-height: 1.8 !important;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 990px) {
+  .header {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1350px) {

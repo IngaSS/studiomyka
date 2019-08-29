@@ -19,6 +19,9 @@ export default {
 <style>
 .sertificate {
   margin-top: 3vw;
+  background-image: url(../img/sertBack.png);
+  background-repeat: repeat-x;
+  background-size: contain;
 }
 
 .sertDiv {
@@ -26,10 +29,7 @@ export default {
   display: flex;
   min-width: 100%;
   min-height: 17vw;
-  background-image: url(../img/sertBack.png);
-  background-repeat: repeat-x;
   justify-content: space-around;
-  background-size: contain;
 }
 
 .textSert {
@@ -50,7 +50,7 @@ export default {
 
 .textSert p {
   font-family: "Fira Sans", sans-serif;
-  font-size: 1.2vw;
+  font-size: 1.5vw;
   font-weight: 100;
   color: #ffffff;
 }
@@ -71,13 +71,91 @@ export default {
   color: #ffffff;
 }
 
+@media (min-width: 320px) and (max-width: 499px) {
+  .sertificate {
+    background-size: unset;
+  }
+
+  .sertDiv {
+    text-align: -webkit-center;
+    flex-direction: column;
+    min-width: 100%;
+  }
+
+  .textSert {
+    margin: 1vw auto;
+    margin-bottom: 0;
+    max-width: 96vw;
+    text-align: justify;
+  }
+
+  .textSert h2 {
+    font-size: 8vw;
+    text-align: center;
+  }
+
+  .textSert p {
+    text-align: justify;
+    font-size: 5vw;
+  }
+
+  .buySert {
+    margin-bottom: 2vw;
+    width: 40vw;
+    height: 13vw !important;
+  }
+
+  .buySert .v-btn__content {
+    font-size: 6vw;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 823px) {
+  .sertificate {
+    background-size: unset;
+  }
+
+  .sertDiv {
+    text-align: -webkit-center;
+    flex-direction: column;
+    min-width: 100%;
+  }
+
+  .textSert {
+    margin: 1vw auto;
+    margin-bottom: 0;
+    max-width: 96vw;
+    text-align: justify;
+  }
+
+  .textSert h2 {
+    font-size: 5vw;
+    text-align: center;
+  }
+
+  .textSert p {
+    text-align: justify;
+    font-size: 3vw;
+  }
+
+  .buySert {
+    margin-bottom: 2vw;
+    width: 31vw;
+    height: 11vw !important;
+  }
+
+  .buySert .v-btn__content {
+    font-size: 4vw;
+  }
+}
+
 @media (min-width: 1023px) and (max-width: 1250px) {
   .textSert {
     max-width: 400px;
   }
 }
 
-@media (min-width: 640px) and (max-width: 823px) {
+/* @media (min-width: 640px) and (max-width: 823px) {
   .sertDiv {
     text-align: -webkit-center;
     flex-direction: column;
@@ -95,9 +173,9 @@ export default {
   .buySert {
     margin-bottom: 2%;
   }
-}
+} */
 
-@media (min-width: 320px) and (max-width: 639px) {
+/* @media (min-width: 320px) and (max-width: 639px) {
   .sertDiv {
     text-align: -webkit-center;
     flex-direction: column;
@@ -130,6 +208,6 @@ export default {
   .buySert .v-btn__content {
     font-size: 25px;
   }
-}
+} */
 </style>
 

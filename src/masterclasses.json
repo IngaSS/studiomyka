@@ -102,5 +102,107 @@
         "price": "2500.00",
         "stock": 10,
         "available": true
+    }, {
+        "id": 3,
+        "name": "Просто класс",
+        "category": {
+            "id": 1,
+            "name": "Мастер-класс",
+            "slug": "master-klass",
+            "description": "Тип мероприятия - мастер класс"
+        },
+        "kitchen": {
+            "id": 1,
+            "name": "русская кухня",
+            "slug": "russkaya-kuhnya",
+            "description": "тестовое описание русской кухни",
+            "images": []
+        },
+        "dishes": [{
+                "id": 1,
+                "name": "1 блюдо",
+                "slug": "1-blyudo",
+                "description": "тестовое описание первого блюда",
+                "images": [{
+                        "image": "http://area51dev.studiomyka.ru:8080/images/dishes/00.jpg"
+                    },
+                    {
+                        "image": "http://area51dev.studiomyka.ru:8080/images/dishes/original_VKQJQ2J.jpg"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "name": "2 блюдо",
+                "slug": "2-blyudo",
+                "description": "тестовое описание второго блюда",
+                "images": [{
+                        "image": "http://area51dev.studiomyka.ru:8080/images/dishes/s1200_1.jpg"
+                    },
+                    {
+                        "image": "http://area51dev.studiomyka.ru:8080/images/dishes/s1200_2.jpg"
+                    }
+                ]
+            }
+        ],
+        "slug": "russkij-klass",
+        "description": "тестовое описание  мастер класса",
+        "dateofevent": "2019-08-21T20:32:28Z",
+        "duration": "01:00:00",
+        "quantity": 10,
+        "price": "2500.00",
+        "stock": 10,
+        "available": true
+    }, {
+        "id": 4,
+        "name": "Тихий класс",
+        "category": {
+            "id": 1,
+            "name": "Мастер-класс",
+            "slug": "master-klass",
+            "description": "Тип мероприятия - мастер класс"
+        },
+        "kitchen": {
+            "id": 1,
+            "name": "русская кухня",
+            "slug": "russkaya-kuhnya",
+            "description": "тестовое описание русской кухни",
+            "images": []
+        },
+        "dishes": [{
+                "id": 1,
+                "name": "1 блюдо",
+                "slug": "1-blyudo",
+                "description": "тестовое описание первого блюда",
+                "images": [{
+                        "image": "http://area51dev.studiomyka.ru:8080/images/dishes/00.jpg"
+                    },
+                    {
+                        "image": "http://area51dev.studiomyka.ru:8080/images/dishes/original_VKQJQ2J.jpg"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "name": "2 блюдо",
+                "slug": "2-blyudo",
+                "description": "тестовое описание второго блюда",
+                "images": [{
+                        "image": "http://area51dev.studiomyka.ru:8080/images/dishes/s1200_1.jpg"
+                    },
+                    {
+                        "image": "http://area51dev.studiomyka.ru:8080/images/dishes/s1200_2.jpg"
+                    }
+                ]
+            }
+        ],
+        "slug": "russkij-klass",
+        "description": "тестовое описание  мастер класса",
+        "dateofevent": "2019-08-21T20:32:28Z",
+        "duration": "01:00:00",
+        "quantity": 10,
+        "price": "2500.00",
+        "stock": 10,
+        "available": true
     }
 ]

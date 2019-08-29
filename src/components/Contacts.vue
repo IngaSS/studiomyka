@@ -20,7 +20,7 @@
           />
         </yandex-map>
       </div>
-      <div class="contacts">
+      <div class="contactsFull">
         <h3>Контакты</h3>
         <div class="contactsText">
           <p class="p1">
@@ -69,8 +69,8 @@ export default {
 }
 
 .map .ymaps-2-1-74-float-button-icon {
-  width: 1.7vw;
-  height: 1.7vw;
+  width: 1.4vw;
+  height: 1.4vw;
 }
 
 .map .ymaps-2-1-74-float-button {
@@ -139,15 +139,6 @@ export default {
   top: 0.8vw;
 }
 
-/* iframe {
-  width: 5vw !important;
-  max-width: 5vw !important;
-  min-width: 8vw !important;
-  height: 1.5vw !important;
-  max-height: 1.5vw !important;
-  min-height: 2vw !important;
-} */
-
 .mainDiv {
   min-height: 30vw;
   max-width: 95%;
@@ -196,33 +187,32 @@ export default {
   text-align: -webkit-center;
 }
 
-.contacts {
+.contactsFull {
   display: flex;
   flex-direction: column;
-  max-width: 590px;
   justify-content: space-between;
   text-align: center;
   text-align: -webkit-center;
 }
 
 .contactsText {
-  min-height: 460px;
+  min-height: 22vw;
   border-radius: 20px;
   text-align: -webkit-center;
   background-color: rgba(255, 255, 255, 0.27);
-  width: 493px;
+  width: 28vw;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   margin: 0 auto;
 }
 
-.contacts .p1,
-.contacts .p2 {
-  max-width: 269px;
+.contactsFull .p1,
+.contactsFull .p2 {
+  max-width: 21vw;
   text-align: center;
   font-family: "Fira Sans", sans-serif;
-  font-size: 23px;
+  font-size: 1.5vw;
   font-weight: 300;
   font-style: normal;
   font-stretch: extra-condensed;
@@ -232,10 +222,10 @@ export default {
   margin: 0 auto;
 }
 
-.contacts .p2 {
-  max-width: 170px;
+.contactsFull .p2 {
+  max-width: 23vw;
   margin-top: 0;
-  font-size: 20px;
+  font-size: 1.2vw;
 }
 
 .mapCont h3 {
@@ -249,28 +239,94 @@ export default {
   color: #ffffff;
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .mapCont {
-    margin-top: 5%;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    /* -ms-flex-direction: column; */
+    /* flex-direction: column; */
     text-align: center;
   }
 
-  .contacts {
+  .contactsFull {
     max-width: 100%;
   }
 
   .contactsText {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 320px;
-    min-height: 300px;
+    width: 38vw;
+    min-height: 30vw;
+  }
+
+  .contactsFull .p1 {
+    max-width: 35vw;
+    font-size: 2vw;
+  }
+
+  .contactsFull .p2 {
+    max-width: 31vw;
+    font-size: 1.7vw;
+  }
+
+  .mapCont h3 {
+    font-size: 3vw;
   }
 
   .ymap-container {
-    width: 320px;
-    height: 300px;
+    width: 38vw;
+    height: 30vw;
+  }
+
+  .map .ymaps-2-1-74-map {
+    width: 38vw !important;
+    height: 30vw !important;
+  }
+
+  .map {
+    /* margin-bottom: 2%; */
+    /* height: 39vw; */
+  }
+}
+
+@media (min-width: 500px) and (max-width: 769px) {
+  .mapCont {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contactsFull {
+    max-width: 100%;
+  }
+
+  .contactsText {
+    width: 55vw;
+    min-height: 40vw;
+  }
+
+  .contactsFull .p1 {
+    max-width: 48vw;
+    font-size: 2.5vw;
+  }
+
+  .contactsFull .p2 {
+    max-width: 37vw;
+    font-size: 2.3vw;
+  }
+
+  .mapCont h3 {
+    font-size: 4vw;
+  }
+
+  .ymap-container {
+    width: 55vw;
+    height: 40vw;
+  }
+
+  .map .ymaps-2-1-74-map {
+    width: 55vw !important;
+    height: 40vw !important;
   }
 
   .map {
@@ -278,24 +334,46 @@ export default {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 320px) and (max-width: 499px) {
   .mapCont {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     text-align: center;
   }
 
-  .contacts {
+  .contactsFull {
     max-width: 100%;
   }
 
   .contactsText {
-    width: 590px;
-    min-height: 493px;
+    width: 70vw;
+    min-height: 55vw;
+  }
+
+  .contactsFull .p1 {
+    max-width: 62vw;
+    font-size: 3.5vw;
+  }
+
+  .contactsFull .p2 {
+    max-width: 54vw;
+    font-size: 3vw;
+  }
+
+  .mapCont h3 {
+    font-size: 5vw;
   }
 
   .ymap-container {
-    width: 590px;
-    height: 460px;
+    width: 70vw;
+    height: 55vw;
+  }
+
+  .map .ymaps-2-1-74-map {
+    width: 70vw !important;
+    height: 55vw !important;
   }
 
   .map {

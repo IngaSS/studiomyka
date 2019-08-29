@@ -63,31 +63,52 @@ export default {
   margin: auto 0;
 }
 
-@media (min-width: 320px) and (max-width: 567px) {
-  .partIcons {
-    min-height: 650px;
-    justify-content: space-around;
-    flex-direction: column;
-  }
-
-  .partIcons img {
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: 568px) and (max-width: 1024px) {
+@media (min-width: 320px) and (max-width: 500px) {
   .partIcons {
     flex-direction: column;
-    min-height: 600px;
+    flex-wrap: wrap;
     text-align: -webkit-center;
   }
 
-  .icon4 {
-    width: 110px;
+  .partIcons img {
+    width: 40vw;
+    height: 23vw;
+  }
+
+  .partIcons img:nth-child(3) {
+    margin-left: 0;
+    margin-top: 9vw;
+  }
+
+  .partIcons img:nth-child(4) {
+    width: 13.5vw;
+    height: 21vw;
+    margin: 0 auto;
+    margin-top: 7vw;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 991px) {
+  .partIcons {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .partIcons img {
-    margin: 0 auto;
+    width: 33vw;
+    height: 17vw;
+  }
+
+  .partIcons img:nth-child(3) {
+    margin-left: 0;
+    margin-top: 7vw;
+  }
+
+  .partIcons img:nth-child(4) {
+    width: 11.5vw;
+    height: 19vw;
+    margin-top: 8vw;
+    margin-right: 10.3vw;
   }
 }
 </style>
